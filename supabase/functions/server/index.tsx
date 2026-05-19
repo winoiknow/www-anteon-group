@@ -52,7 +52,7 @@ app.post("/make-server-fd9224b8/contact", async (c) => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        from: "Anteon Group Contact Form <onboarding@resend.dev>",
+        from: "Anteon Group <noreply@anteon.group>",
         to: [recipientEmail],
         reply_to: email,
         subject: `New Contact Form Submission from ${name}`,
