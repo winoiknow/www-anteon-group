@@ -1,5 +1,6 @@
 import { Link } from 'react-router';
 import Navigation from './Navigation';
+import logoSrc from '../../assets/logo.png';
 
 export default function Landing() {
   return (
@@ -9,9 +10,12 @@ export default function Landing() {
       <main className="min-h-screen flex items-center justify-center px-6">
         <div className="max-w-4xl text-center space-y-12">
           <div className="space-y-6">
-            <h1 className="text-6xl md:text-8xl font-light tracking-tight">
-              ANTEON GROUP
-            </h1>
+            <img
+              src={logoSrc}
+              alt="Anteon Group"
+              className="mx-auto w-auto"
+              style={{ maxHeight: '260px' }}
+            />
             <div className="h-px w-32 mx-auto bg-highlight"></div>
             <p className="text-xl md:text-2xl font-light tracking-wide text-muted-foreground">
               Tailoring Solutions to Unique Problems
