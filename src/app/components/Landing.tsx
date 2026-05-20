@@ -1,5 +1,6 @@
 import { Link } from 'react-router';
 import Navigation from './Navigation';
+import AtomicLogo from './AtomicLogo';
 
 export default function Landing() {
   return (
@@ -8,11 +9,21 @@ export default function Landing() {
 
       <main className="min-h-screen flex items-center justify-center px-6">
         <div className="max-w-4xl text-center space-y-12">
-          <div className="space-y-6">
-            <h1 className="text-6xl md:text-8xl font-light tracking-tight">
-              ANTEON GROUP
-            </h1>
-            <div className="h-px w-32 mx-auto bg-highlight"></div>
+          <div className="space-y-8 flex flex-col items-center">
+            <div className="relative flex items-center justify-center">
+              <div className="relative flex items-center">
+                <AtomicLogo className="w-44 h-44 md:w-56 md:h-56 flex-shrink-0" />
+                <div className="flex flex-col items-start -ml-16 md:-ml-20">
+                  <h1 className="text-8xl md:text-9xl font-medium whitespace-nowrap" style={{ fontFamily: "'Dancing Script', cursive", fontWeight: 600, fontSize: '9rem' }}>
+                    Anteon
+                  </h1>
+                  <span className="text-xl md:text-2xl tracking-[0.3em] font-light uppercase ml-20 md:ml-24 -mt-3">
+                    GROUP
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div className="h-px w-32 bg-highlight"></div>
             <p className="text-xl md:text-2xl font-light tracking-wide text-muted-foreground">
               Tailoring Solutions to Unique Problems
             </p>
